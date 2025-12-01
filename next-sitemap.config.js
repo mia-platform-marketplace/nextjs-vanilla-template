@@ -1,6 +1,6 @@
 /** @type {import('next').NextConfig} */
 
-const siteUrl = 'http://localhost:3000'
+const siteUrl = 'http://localhost:9000'
 
 module.exports = {
   siteUrl,
