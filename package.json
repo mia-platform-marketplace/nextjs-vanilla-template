@@ -1,0 +1,42 @@
+{
+  "name": "sample-app",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build && next-sitemap && cp -r .next/static .next/standalone/.next/ && cp -r public .next/standalone/",
+    "start": "next start",
+    "lint": "next lint",
+    "start:stubby": "stubby --watch --stubs 8000 --data .stubby/stubby.config.yml",
+    "coverage": "npm run lint --coverage",
+    "test": "jest"
+  },
+  "dependencies": {
+    "eslint": "^8.57.0",
+    "eslint-config-next": "^14.1.1",
+    "next": "^14.2.16",
+    "next-sitemap": "^4.2.3",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "stubby": "^5.1.0",
+    "typescript": "^5.3.3"
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.26.7",
+    "@testing-library/dom": "^10.4.0",
+    "@testing-library/jest-dom": "^6.6.3",
+    "@testing-library/react": "^16.1.0",
+    "@types/jest": "^29.5.14",
+    "@types/node": "^20.11.24",
+    "@types/react": "^18.2.61",
+    "@types/react-dom": "^18.2.19",
+    "autoprefixer": "^10.4.20",
+    "babel-jest": "^29.7.0",
+    "jest": "^29.7.0",
+    "jest-environment-jsdom": "^29.7.0",
+    "postcss": "^8.4.47",
+    "ts-jest": "^29.2.5",
+    "ts-node": "^10.9.2"
+  },
+  "packageManager": "yarn@4.5.0+sha512.837566d24eec14ec0f5f1411adb544e892b3454255e61fdef8fd05f3429480102806bac7446bc9daff3896b01ae4b62d00096c7e989f1596f2af10b927532f39"
+}
