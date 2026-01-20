@@ -1,9 +1,9 @@
 import styles from "./page.module.css";
-import { fetchCrudCollection } from "@/lib/api";
+
 
 export default async function Home() {
 
-  const homePage = await fetchCrudCollection({endpoint: 'starter-config'})
+  const homePage = [];
 
   return (
     <div className={styles.page}>
